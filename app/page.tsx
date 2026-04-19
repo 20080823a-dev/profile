@@ -6,7 +6,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 export default function UltimateResume() {
   const skills = ['Next.js / React', '網路架構與 WOL', 'PC 硬體調校', '資訊安全', 'Python', 'C++'];
   const traits = ['熱愛挑戰', '自主學習', '邏輯思維'];
-  const interests = ['軟體開發', '資安研究', '系統優化', '惡意程式研究', '籃球']; 
+  const interests = ['軟體開發', '資安研究', '系統優化', '運動', '籃球']; 
   
   const images = ['IMG_5587.JPG', 'IMG_5730.JPG', 'IMG_7281.JPG','IMG_9806.JPG', 'IMG_9828.JPG','IMG_9829.JPG'];
   const [currentImg, setCurrentImg] = useState(0);
