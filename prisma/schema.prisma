@@ -1,0 +1,7 @@
+// prisma/schema.prisma
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  techStack   String
+}
