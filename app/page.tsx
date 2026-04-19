@@ -73,17 +73,17 @@ export default function UltimateResume() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 overflow-hidden">
+    <div className="min-h-screen md:h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 md:overflow-hidden">
       <nav className="p-4 border-b border-slate-200 dark:border-slate-800 shrink-0">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <span className="text-xl font-black">蕭珘紘<span className="text-blue-500">個人檔案</span></span>
         </div>
       </nav>
 
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6 min-h-0 overflow-y-auto">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6 min-h-0 md:overflow-y-auto">
         
         {/* 左欄：個人簡介與填滿空間的輪播圖 */}
-        <section className="flex flex-col h-full gap-4 min-h-0">
+        <section className="flex flex-col md:h-full gap-4 min-h-0">
           <div className="flex flex-col items-center md:items-start gap-4 shrink-0 text-center md:text-left">
             <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-slate-800 bg-slate-200">
               <img src="/IMG_9834.JPG" alt="Profile" className="w-full h-full object-cover" />
@@ -97,7 +97,7 @@ export default function UltimateResume() {
               {skills.map(s => <span key={s} className="px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] font-semibold rounded">{s}</span>)}
             </div>
           </div>
-          <div className="relative flex-1 rounded-2xl overflow-hidden shadow-inner bg-slate-200 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 mt-2 min-h-[150px]">
+          <div className="relative flex-1 rounded-2xl overflow-hidden shadow-inner bg-slate-200 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 mt-2 min-h-[250px] md:min-h-[150px]">
             {images.map((img, idx) => (
               <img key={idx} src={img} alt="Gallery" className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${idx === currentImg ? 'opacity-100' : 'opacity-0'}`} />
             ))}
@@ -134,7 +134,7 @@ export default function UltimateResume() {
             <p className="text-sm">📱 0958-202-895</p>
           </div>
 
-          {/* 技術能力雷達圖 (對調至中欄) */}
+          {/* 技術能力雷達圖 */}
           <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex-1 min-h-[250px] flex flex-col">
             <h2 className="font-bold mb-1 text-lg shrink-0">技術能力雷達</h2>
             <div className="w-full flex-1 min-h-[200px]">
@@ -161,7 +161,7 @@ export default function UltimateResume() {
             ))}
           </div>
 
-          {/* 互動式終端機區塊 (對調至右欄) */}
+          {/* 互動式終端機區塊 */}
           <div className="bg-[#1e1e1e] rounded-2xl shadow-sm border border-slate-700 p-4 font-mono text-sm h-64 flex flex-col mt-2">
             <div className="flex items-center gap-2 mb-2 shrink-0">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
