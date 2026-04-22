@@ -88,7 +88,7 @@ export default function UltimateResume() {
             <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-slate-800 bg-slate-200">
               <img src="/IMG_9834.JPG" alt="Profile" className="w-full h-full object-cover" />
             </div>
-            <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400">熱愛程式與架構的高中生</h1>
+            <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400">熱愛程式與籃球的高中生</h1>
             <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
               致力於資訊領域，對資訊安全與底層運作邏輯充滿熱忱。具備網頁開發、網路設備調校及虛擬網路架設等實務經驗。我已取得APCS與MTA國際認證，並能流暢配置WOL與RDP環境。
               <br/>除了軟體開發，我也嘗試進行硬體效能調校，致力於在資源限制下找出能順跑遊戲與高負載應用的最佳參數。
