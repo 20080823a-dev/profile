@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
 
 export default function UltimateResume() {
-  const skills = ['Next.js / React', '網路架構與 WOL', 'PC 硬體調校', '資訊安全', 'Python', 'C++'];
+  const skills = ['Next.js / React', '網路架構與 WOL', 'PC 硬體調校', '資訊安全', 'Python', 'C'];
   const traits = ['熱愛挑戰', '自主學習', '邏輯思維'];
   const interests = ['軟體開發', '資安研究', '系統優化', '運動', '籃球']; 
   
@@ -31,7 +31,7 @@ export default function UltimateResume() {
 
   const skillData = [
     { subject: '硬體調校', level: 55 }, { subject: 'Python', level:70 },
-    { subject: 'C++', level: 50 }, { subject: '網路架構', level: 70 },
+    { subject: 'C', level: 50 }, { subject: '網路架構', level: 70 },
     { subject: '網頁開發', level: 60 }
   ];
 
